@@ -1,3 +1,90 @@
-.navbar-color {
-    color: white !important;
+@font-face {
+    font-family: 'minecraftregular';
+    src: url('../fonts/1_minecraft-regular-webfont.woff2') format('woff2'),
+         url('../fonts/1_minecraft-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+body {
+    background-color: #3d3354;
+}
+
+.minecraft-font {
+    font-family: minecraftregular;
+}
+
+h1 {
+    color: white;
+}
+h4 {
+    color: white;
+}
+
+h5 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.discord-join {
+    border-radius: 25px;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .navbar-color {
+      color: #bababa !important;
+  }
+  
+  a:hover {
+      color: white !important;
+  }
+  a {
+      color: white;
+  }
+
+
+.not-first {
+    display: none;
+}
+
+.table-custom {
+    max-width: 1000px;
+}
+
+td {
+    color: white;
+}
+
+.thead-custom {
+    background-color: #1F1A2B;
+    color: white;
+}
+
+.footer-bg {
+    background-color: #1F1A2B;
+    color: white;
+}
+
+.main {
+    background-image: url(../img/header-bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 900px;
 }

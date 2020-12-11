@@ -1,40 +1,532 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Obsidion Development Team</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <link rel="stylesheet" href="CSS/main.css">
-        <link rel="shortcut icon" type="image" href="IMG/favicon.png"" />
-    </head>
-    <body>
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #1F1A2B;">
-            <a class="navbar-brand minecraft-font" href="#" style="color: white; font-size: 25px;">Obsidion</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-            <li class="nav-item minecraft-font">
-                <a class="nav-link navbar-color" href="#commands">About Us</a>
-            </li>
-            <li class="nav-item minecraft-font">
-                <a class="nav-link navbar-color" href="#team">The Team</a>
-            </li>
-            <li class="nav-item minecraft-font">
-                <a class="nav-link navbar-color" href="https://www.patreon.com/obsidion" target="_blank">Patreon</a>
-            </li>
-            <li class="nav-item minecraft-font">
-                <a class="nav-link navbar-color" href="https://github.com/Obsidion-dev/" target="_blank">GitHub</a>
-            </li>
-            </ul>
-        
-            <span class="navbar-text" style="color: white;">
-                <a href="/invite.html" style="color: white; font-size: 20px;" class="minecraft-font">Add to<img style="max-width: auto; max-height: 30px; vertical-align: -25%" src="img/Discord-Wordmark-Color.png"></a>
-            </span>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Obsidion Discord Bot</title>
+    <link rel="icon" href="img/favicon.png" />
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #1F1A2B;">
+        <a class="navbar-brand minecraft-font" href="#" style="color: white; font-size: 25px;">Obsidion</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item minecraft-font">
+            <a class="nav-link navbar-color" href="#commands">Commands</a>
+          </li>
+          <li class="nav-item minecraft-font">
+            <a class="nav-link navbar-color" href="#team">The Team</a>
+          </li>
+          <li class="nav-item minecraft-font">
+            <a class="nav-link navbar-color" href="https://www.patreon.com/obsidion" target="_blank">Patreon</a>
+          </li>
+          <li class="nav-item minecraft-font">
+            <a class="nav-link navbar-color" href="https://github.com/Obsidion-dev/Obsidion/" target="_blank">GitHub</a>
+          </li>
+        </ul>
+      
+        <span class="navbar-text" style="color: white;">
+            <a href="/invite.html" style="color: white; font-size: 20px;" class="minecraft-font">Add to<img style="max-width: auto; max-height: 30px; vertical-align: -25%" src="img/Discord-Wordmark-Color.png"></a>
+          </span>
+        </div>
+      </nav>
+<!--Main header-->
+      <div id="main" class="main d-flex justify-content-center">
+        <div class="vertical-center">
+        <div class="container">
+          <div class="row">
+            <div class="col">
             </div>
-        </nav>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    </body>
+            <div class="col-6">
+              <div class="d-flex justify-content-center mt-5 minecraft-font">
+                <img src="img/Bot Profile.png" width="250px" height="200px">
+              </div>
+                <div class="d-flex align-items-end minecraft-font">
+                  <h1>Obsidion</h1>
+                </div>
+                <div class="d-flex justify-content-start minecraft-font">
+                  <h5>Obsidion is an open source minecaft focusued Discord bot with lots of advanced features</h5>
+                </div>
+              
+              <div class="d-flex align-bottom justify-content-center minecraft-font mt-2">
+                <button type="button" class="btn btn-dark mr-3 mb-5" style="background-color: #3d3354; width: 250px !important;"><a href="#commands">Learn More</a></button>
+                <button type="button" class="btn btn-dark mr-3 mb-5" style="background-color: #3d3354;  width: 380px !important;"><a href="invite.html"> Add to<img style="max-width: auto; max-height: 25px; vertical-align: -30%" src="img/Discord-Wordmark-Color.png"></a></button>
+                <button type="button" class="btn btn-dark mr-3 mb-5" style="background-color: #3d3354; width: 200px !important;"><a href="https://top.gg/bot/691589447074054224/vote">Upvote</a></button>
+              </div>
+            </div>
+            <div class="col">
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!--/Main header-->
+<!--Text above command tables-->
+      <div id="commands">
+        <h1 class="d-flex justify-content-center minecraft-font">Obsidion Commands</h1>
+        <p class="d-flex justify-content-center minecraft-font">To use type: [prefix] [command name] for example: /help<br>You can also mention the bot to use a command, for example @Obsidion [command name] <br>For more help with a specific command type: /help [command name]</p>
+      <!--/Text above command tables-->
+
+      <!--Buttons and table for commands-->
+  <div class="d-flex justify-content-center minecraft-font">
+      <button type="button" class="btn btn-primary mr-3" id="Information" data-showbutton="1" style="background-color: #1F1A2B; border: none;">Information</button>
+      <button type="button" class="btn btn-primary mr-3" id="Redstone" data-showbutton="2" style="background-color: #1F1A2B; border: none;">Redstone</button>
+      <button type="button" class="btn btn-primary mr-3" id="Images" data-showbutton="3" style="background-color: #1F1A2B; border: none;">Images</button>
+      <button type="button" class="btn btn-primary mr-3" id="Fun" data-showbutton="4" style="background-color: #1F1A2B; border: none;">Fun</button>
+      <button type="button" class="btn btn-primary mr-3" id="Misc" data-showbutton="5" style="background-color: #1F1A2B; border: none;">Miscellaneous</button>
+      <button type="button" class="btn btn-primary mr-3" id="Servers" data-showbutton="6" style="background-color: #1F1A2B; border: none;">Servers</button>
+    </div>
+    <br>
+      <div data-button="1">
+        <h1 class="d-flex justify-content-center minecraft-font">Information</h1>
+        <div class="d-flex justify-content-center">
+        <table class="table table-custom minecraft-font">
+          <thead class="thead-custom">
+            <tr>
+              <th scope="col">Command</th>
+              <th scope="col">Description</th>
+              <th scope="col">Usage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Profile</td>
+              <td>View a players Minecraft UUID, Username history and skin.</td>
+              <td>/profile [username]</td>
+            </tr>
+            <tr>
+              <td>Server</td>
+              <td>Get info on a minecraft server.</td>
+              <td>/server [server ip] [port]</td>
+            </tr>
+            <tr>
+              <td>Bug</td>
+              <td>Gets info on a bug from https://bugs.mojang.com/.</td>
+              <td>/mcbug [bug]</td>
+            </tr>
+            <tr>
+              <td>Wiki</td>
+              <td>Get an article from the minecraft wiki.</td>
+              <td>/wiki [query]</td>
+            </tr>
+            <tr>
+              <td>ServerPE</td>
+              <td>Get info on a minecraft PE server.</td>
+              <td>/serverpe [server ip] [port]</td>
+            </tr>
+            <tr>
+              <td>Status</td>
+              <td>Check the status of all the Mojang services.</td>
+              <td>/server</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+      <div data-button="2" class="not-first">
+        <h1 class="d-flex justify-content-center minecraft-font">Redstone</h1>
+        <div class="d-flex justify-content-center">
+        <table class="table table-custom minecraft-font">
+          <thead class="thead-custom">
+            <tr>
+              <th scope="col">Command</th>
+              <th scope="col">Description</th>
+              <th scope="col">Usage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Storage</td>
+              <td>Calculate how many chests and shulkers you need for that number of items.</td>
+              <td>/storage [items]</td>
+            </tr>
+            <tr>
+              <td>Comparator</td>
+              <td>Calculate the strength of a comparator output only works for a chest.</td>
+              <td>/comparator [item_count]</td>
+            </tr>
+            <tr>
+              <td>tick2second</td>
+              <td>Convert seconds to tick.</td>
+              <td>/tick2second [ticks]</td>
+            </tr>
+            <tr>
+              <td>second2tick</td>
+              <td>Convert ticks to seconds.</td>
+              <td>/second2tick [seconds]</td>
+            </tr>
+            <tr>
+              <td>itemsfromredstone</td>
+              <td>Calculate how many items for a redstone signal.</td>
+              <td>/itemsfromredstone [item_count]</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+      <div data-button="3" class="not-first">
+        <h1 class="d-flex justify-content-center minecraft-font">Images</h1>
+        <div class="d-flex justify-content-center">
+        <table class="table table-custom minecraft-font">
+          <thead class="thead-custom">
+            <tr>
+              <th scope="col">Command</th>
+              <th scope="col">Description</th>
+              <th scope="col">Usage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Achievement</td>
+              <td>Create your very own custom Minecraft achievements!</td>
+              <td>/achievement [block id] [title] [word1] [word2] [word3]</td>
+            </tr>
+            <tr>
+              <td>Avatar</td>
+              <td>Renders a Minecraft players face.</td>
+              <td>/avatar [username]</td>
+            </tr>
+            <tr>
+              <td>Skull</td>
+              <td>Renders a Minecraft players skull.</td>
+              <td>/skull [username]</td>
+            </tr>
+            <tr>
+              <td>Skin</td>
+              <td>Renders a Minecraft players skin.</td>
+              <td>/skin [username]</td>
+            </tr>
+            <tr>
+              <td>Render</td>
+              <td>Renders a Minecraft players skin in 6 different ways. You can choose from these 6 render types: face, front, frontfull, head, bust & skin.</td>
+              <td>/render [username] [type]</td>
+            </tr>
+            <tr>
+              <td>Sign</td>
+              <td>Create a Minecraft sign with custom text.</td>
+              <td>/sign [text]</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+      <div data-button="4" class="not-first">
+        <h1 class="d-flex justify-content-center minecraft-font">Fun</h1>
+        <div class="d-flex justify-content-center">
+          <table class="table table-custom minecraft-font">
+            <thead class="thead-custom">
+              <tr>
+                <th scope="col">Command</th>
+                <th scope="col">Description</th>
+                <th scope="col">Usage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Buildidea</td>
+                <td>Get an idea for a new idea.</td>
+                <td>/buildidea</td>
+              </tr>
+              <tr>
+                <td>Villager</td>
+                <td>Convert english to Villager speech hmm.</td>
+                <td>/villager [speech]</td>
+              </tr>
+              <tr>
+                <td>Enchant</td>
+                <td>Enchant a message.</td>
+                <td>/enchant [message]</td>
+              </tr>
+              <tr>
+                <td>Unenchant</td>
+                <td>Unenchant a message.</td>
+                <td>/unenchant [message]</td>
+              </tr>
+              <tr>
+                <td>Creeper</td>
+                <td>Well there is never not enough room for this.</td>
+                <td>/creeper</td>
+              </tr>
+              <tr>
+                <td>Kill</td>
+                <td>Kill that pesky friend in a fun and stylish way.</td>
+                <td>/kill [member]</td>
+              </tr>
+              <tr>
+                <td>PvP</td>
+                <td>Duel someone.</td>
+                <td>/pvp [memeber1] [memeber2]</td>
+              </tr>
+              <tr>
+                <td>RPS</td>
+                <td>Play Rock Paper Shears</td>
+                <td>/rps [your_choice]</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div data-button="5" class="not-first">
+        <h1 class="d-flex justify-content-center minecraft-font">Miscellaneous</h1>
+        <div class="d-flex justify-content-center">
+          <table class="table table-custom minecraft-font">
+            <thead class="thead-custom">
+              <tr>
+                <th scope="col">Command</th>
+                <th scope="col">Description</th>
+                <th scope="col">Usage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Invite</td>
+                <td>Invite the bot to your Discord server.</td>
+                <td>/invite</td>
+              </tr>
+              <tr>
+                <td>License Info</td>
+                <td>Info about the license which Obsidion is released under.</td>
+                <td>/licenseinfo</td>
+              </tr>
+              <tr>
+                <td>Info</td>
+                <td>Display info about the bot.</td>
+                <td>/info</td>
+              </tr>
+              <tr>
+                <td>Source</td>
+                <td>Displays my full source code or for a specific command. To display the source code of a subcommand you can separate it by periods.</td>
+                <td>/source [command]</td>
+              </tr>
+              <tr>
+                <td>Vote</td>
+                <td>Help support this bot by helping others to find it.</td>
+                <td>/help</td>
+              </tr>
+              <tr>
+                <td>Ping</td>
+                <td>Check ping of client, message and api.</td>
+                <td>/ping</td>
+              </tr>
+              <tr>
+                <td>Stats</td>
+                <td>View statistics about the bot.</td>
+                <td>/stats</td>
+              </tr>
+              <tr>
+                <td>BuG Report</td>
+                <td>Sends a bug report</td>
+                <td>/bugreport [content]</td>
+              </tr>
+              <tr>
+                <td>Feedback</td>
+                <td>Gives feedback about the bot. This is a quick way to request features or bug fixes without being in the bot's server.</td>
+                <td>/feedback [content]</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div data-button="6" class="not-first">
+        <h1 class="d-flex justify-content-center minecraft-font">Servers</h1>
+        <div class="d-flex justify-content-center">
+        <table class="table table-custom minecraft-font">
+          <thead class="thead-custom">
+            <tr>
+              <th scope="col">Command</th>
+              <th scope="col">Description</th>
+              <th scope="col">Usage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Wyncraft</td>
+              <td>Get statistics of a player on wynncraft.</td>
+              <td>/wyncraft [username]</td>
+            </tr>
+            <tr>
+              <td>Gommehd</td>
+              <td>Get statistics of a player on gommehd.</td>
+              <td>/gommehd [username]</td>
+            </tr>
+            <tr>
+              <td>VeltPvP</td>
+              <td>Get statistics of a player on veltpvp.</td>
+              <td>/veltpvp [username]</td>
+            </tr>
+            <tr>
+              <td>BlocksMC</td>
+              <td>Get statistics of a player on blocksmc.</td>
+              <td>/blocksmc [username]</td>
+            </tr>
+            <tr>
+              <td>Universocraft</td>
+              <td>Get statistics of a player on universocraft.</td>
+              <td>/universocraft [username]</td>
+            </tr>
+            <tr>
+              <td>Minesaga</td>
+              <td>Get statistics of a player on minesaga.</td>
+              <td>/minesaga [username]</td>
+            </tr>
+            <tr>
+              <td>Manacube</td>
+              <td>Get statistics of a player on manacube.</td>
+              <td>/manacube [username]</td>
+            </tr>
+            <tr>
+              <td>Hiverank</td>
+              <td>View the rank of a player on hiverank.</td>
+              <td>/hiverank [username]</td>
+            </tr>
+            <tr>
+              <td>Hivestatus</td>
+              <td>View the status of a player on hive.</td>
+              <td>/hivestatus [username]</td>
+            </tr>
+            <tr>
+              <td>Hivestats</td>
+              <td>Get statistics of a player on hive.</td>
+              <td>/hivestats [username] [game]</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--/Buttons and table for commands-->
+
+<!--Text above dev profiles-->
+      <h1 class="d-flex justify-content-center minecraft-font">Meet the team behind Obsidion</h1>
+
+      <h4 class="d-flex justify-content-center minecraft-font">These people have been instrumental in helping to get Obsidion up and running.</h4>
+      <h4 class="d-flex justify-content-center minecraft-font">Join the support Discord server for help or to chat with our community!</h4>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+    </div>
+    <div class="col">
+      <a href="https://discord.gg/XQ6RbSP" target="_blank"><img src="https://discordapp.com/api/guilds/695008516590534758/embed.png?style=banner2" class="discord-join"></a>
+</div>
+<div class="col">
+</div>
+  </div>
+</div>
+      <br>
+   <!--/Text above dev profiles-->
+
+<!--Dev profiles-->
+      <div id="team"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col d-flex justify-content-start">
+              <div class="card" style="width: 15rem; background-color: #1F1A2B;">
+                <img class="card-img-top" src="img/Darkflame72.png" alt="Card image cap" style="border-radius: 50%;">
+                <div class="card-body">
+                  <h5 class="card-title minecraft-font" style="color: white;">Darkflame72<br>#1150</h5>
+                  <p class="card-text minecraft-font" style="color: white;">Lead Developer</p>
+                  <a href="https://github.com/Darkflame72/" target="_blank"><img height="32" width="32" src="img/github.svg"/></a>
+                  <a href="https://bowie-co.nz/" title="Darkflame72's personal website"><i class="far fa-user fa-2x" style="color:#DDDDDD; vertical-align: -25%"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 15rem; background-color: #1F1A2B;">
+                <img class="card-img-top" src="img/Arrow_Plays.png" alt="Card image cap" style="border-radius: 50%;">
+                <div class="card-body">
+                  <h5 class="card-title minecraft-font" style="color: white;">Arrow_Plays<br>#8625</h5>
+                  <p class="card-text minecraft-font" style="color: white;">Developer</p>
+                  <a href="https://github.com/AjayACST/" target="_blank"><img height="32" width="32" src="img/github.svg"/></a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-end">
+              <div class="card" style="width: 15rem; background-color: #1F1A2B;">
+                <img class="card-img-top" src="img/Abhishek Rameshanand.png" alt="Card image cap" style="border-radius: 50%;">
+                <div class="card-body">
+                  <h5 class="card-title minecraft-font" style="color: white;">Abhishek Rameshanand#8069</h5>
+                  <p class="card-text minecraft-font" style="color: white;">Staff</p>
+                  <a href="https://www.youtube.com/channel/UC0L0CPqIoZzKeV7ndIXjZZw" target="_blank"><img height="32" width="32" src="img/youtube.svg"/></a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+    <br>
+    <!--/Dev profiles-->
+
+    <!--/Footer-->
+<footer class="page-footer font-small footer-bg minecraft-font">
+
+  <!--Copyright-->
+  <div class="footer-copyright text-center pb-2 pt-2">© 2020 Obsidion. All rights reserved.
+  </div>
+  <div class="footer-copyright text-center pb-2">"Minecraft" is a trademark of Mojang AB. Obsidion is not affiliated with Mojang or Minecraft.
+  </div>
+  <center>
+  <div class="d-flex">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <a href="https://botsfordiscord.com/bots/691589447074054224"><img src="https://botsfordiscord.com/api/bot/691589447074054224/widget?theme=dark" title="Visit Obsidion listed on Bots for Discord!" alt="Obsidion's Widget Failed to Load" width="350px"/></a>
+        </div>
+        <div class="col">
+          <a href="https://top.gg/bot/691589447074054224"><img src="https://top.gg/api/widget/691589447074054224.svg" title="Visit Obsidion listed on Bots for Discord!" alt="Obsidion's Widget Failed to Load" width="350px"/></a>
+        </div>
+        <div class="w-100"></div>
+        <div class="col">
+          <a href="https://discord.boats/bot/691589447074054224"><img src="https://discord.boats/api/widget/691589447074054224?type=svg" title="Visit Obsidion listed on Bots for Discord!" alt="Obsidion's Widget Failed to Load" width="350px"/></a>
+        </div>
+        <div class="col">
+          <a href="https://botlist.space/bot/691589447074054224?utm_source=bls&utm_medium=widget&utm_campaign=691589447074054224">
+            <img src="https://api.botlist.space/widget/691589447074054224/5" width="350px">
+        </div>
+    </div>
+    <a href="https://dbots.co/bots/691589447074054224">
+      <img src="https://dbots.co/api/v1/bots/691589447074054224/widget" alt="View on DBots">
+    </a>
+  </center>
+  <br>
+</div>
+  <!--/Copyright-->
+
+</footer>
+<!--/Footer-->
+    <!--Optional JavaScript-->
+    <!--jQuery first, then Popper.js, then Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+  $('#Information,#Redstone,#Images,#Fun,#Misc,#Servers').click(function(){
+    var btn = $(this).data("showbutton");
+    showButtonText(btn);
+});
+
+function showButtonText(btn) {    
+    // reset
+	$('.text').hide();    	
+    $('[data-button]').hide(); 
+        
+    // only show the selected 
+    $('[data-button=' + btn + ']').show();
+}
+    </script>
+  </body>
 </html>
