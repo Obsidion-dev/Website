@@ -1,3 +1,13 @@
-.navbar-color {
-    color: white !important;
+.img-carousel {
+    position: relative;
+}
+
+.gallery-cell {
+    background: #7289DA;
+    height: 950px
+}
+
+.btn-header {
+    position: absolute;
+    z-index: 3;
 }
