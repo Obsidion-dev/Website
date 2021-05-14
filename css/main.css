@@ -16,7 +16,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #7289DA;
+    background: #5865F2;
     width: 100%;
     height: 850px;
     margin-right: 10px;
@@ -90,7 +90,7 @@ html {
 }
 
 .btn-slider {
-    background-color: #7289DA;
+    background-color: #5865F2;
     color: white;
     border-radius: 10px;
     width: 250px;
@@ -127,7 +127,7 @@ section {
 }
 
 #obsidion {
-    background-color: #7289DA;
+    background-color: #5865F2;
 }
 
 #mcsrvstats {
